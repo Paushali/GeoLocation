@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <b> Welcome to Page which shows k Nearest Neighbours!!</b>
+</head>
+<body>
+<form action="/neighbour" method="post" enctype="multipart/form-data">
+<br>
+<br>
+  Enter Start Population:     <input type="text" name="population1" autocomplete="off">
+    <br>
+    <br>
+  Enter End Population:  <input type="text" name="population2" autocomplete="off">
+    <br>
+    <br>
+     <br>
+    <br>
+            <input type="submit" value="submit">
+<br>
+Query time:{{ queriedtime }}
+
+<br>
+Total request to response time:{{ totaltime }}
+<br>
+<br>
+<br>
+    {% for result in results %}
+    {{ result }}
+        <br/>
+    {% endfor %}
+
+</form>
+</body>
+</html>

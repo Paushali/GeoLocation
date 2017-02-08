@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <b> Welcome to Page which shows Nearest Neighbours by Distance!!</b>
+    <br>
+    <a href="/neighbour">Click here for k Nearest Neighbours</a>
+</head>
+<body>
+<form action="/userInput" method="post" enctype="multipart/form-data">
+<br>
+<br>
+  Enter City:     <input type="text" name="city">
+    <br>
+    <br>
+
+    <br>
+      <br>
+    <br>
+            <input type="submit" value="submit">
+<br>
+
+<br>
+Query time:{{ queriedtime }}
+
+<br>
+Total request to response time:{{ totaltime }}
+<br>
+<br>
+    {% for result in results %}
+    {{ result }}
+        <br/>
+    {% endfor %}
+
+</form>
+</body>
+</html>
