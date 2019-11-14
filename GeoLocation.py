@@ -17,7 +17,7 @@ def login():
     if request.method == "GET":
 	return render_template('login.html')
     if request.method == "POST":
-        uname=request.form['username']
+        # some test
         pwd=request.form['pwd']
 	
 	userfile=os.path.dirname(__file__)+'/UserAccessList.txt'
