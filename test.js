@@ -1,5 +1,5 @@
-var gulp = require('gulp'),
-  connect = require('gulp-connect');
+some TextDecoderStream
+another test
 
 gulp.task('webserver', function() {
   connect.server({
